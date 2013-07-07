@@ -14,18 +14,24 @@ typedef enum : NSInteger {
 	BPBarButtonItemStyleStandardLight
 } BPBarButtonItemStyle;
 
+typedef enum : NSInteger {
+	BPBarButtonItemOutlineFull = 100,
+	BPBarButtonItemOutlineMedium = 75,
+    BPBarButtonItemOutlineThin = 50
+} BPBarButtonItemOutline;
+
 @interface BPBarButtonItem : NSObject
 
 // Generate individual buttons
-+ (id)barButtonItemWithStyle:(BPBarButtonItemStyle)style title:(NSString *)title target:(id)target action:(SEL)action;
-+ (id)barButtonItemWithTintColor:(UIColor *)tintColor title:(NSString *)title target:(id)target action:(SEL)action;
++ (id)barButtonItemWithStyle:(BPBarButtonItemStyle)style outline:(BPBarButtonItemOutline)outline title:(NSString *)title target:(id)target action:(SEL)action;
++ (id)barButtonItemWithTintColor:(UIColor *)tintColor outline:(BPBarButtonItemOutline)outline title:(NSString *)title target:(id)target action:(SEL)action;
 
 // Skin all or specific bar button items
-+ (void)customizeBarButtonItem:(UIBarButtonItem *)item withStyle:(BPBarButtonItemStyle)style;
-+ (void)customizeBarButtonItem:(UIBarButtonItem *)item withTintColor:(UIColor *)tintColor;
++ (void)customizeBarButtonItem:(UIBarButtonItem *)item withStyle:(BPBarButtonItemStyle)style outline:(BPBarButtonItemOutline)outline;
++ (void)customizeBarButtonItem:(UIBarButtonItem *)item withTintColor:(UIColor *)tintColor outline:(BPBarButtonItemOutline)outline;
 
 // Skin all or specific segmented controls
-+ (void)customizeSegmentedControl:(UISegmentedControl *)segmentedControl withStyle:(BPBarButtonItemStyle)style;
-+ (void)customizeSegmentedControl:(UISegmentedControl *)segmentedControl withTintColor:(UIColor *)tintColor;
++ (void)customizeSegmentedControl:(UISegmentedControl *)segmentedControl withStyle:(BPBarButtonItemStyle)style outline:(BPBarButtonItemOutline)outline;
++ (void)customizeSegmentedControl:(UISegmentedControl *)segmentedControl withTintColor:(UIColor *)tintColor outline:(BPBarButtonItemOutline)outline;
 
 @end
