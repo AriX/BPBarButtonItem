@@ -54,20 +54,20 @@ typedef enum : NSInteger {
 
 	// Portrait Normal Buttons
 	[item setBackgroundImage:[self stretchableButtonImageForTintColor:tintColor barMetrics:UIBarMetricsDefault forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-	[item setBackgroundImage:[self stretchableButtonImageForTintColor:[self lighterColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsDefault forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+	[item setBackgroundImage:[self stretchableButtonImageForTintColor:[self darkerColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsDefault forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
 
 	// Portrait Back Buttons
 	[item setBackButtonBackgroundImage:[self stretchableButtonImageForTintColor:tintColor barMetrics:UIBarMetricsDefault forType:BPBarButtonItemTypeBack outline:outline] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-	[item setBackButtonBackgroundImage:[self stretchableButtonImageForTintColor:[self lighterColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsDefault forType:BPBarButtonItemTypeBack outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+	[item setBackButtonBackgroundImage:[self stretchableButtonImageForTintColor:[self darkerColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsDefault forType:BPBarButtonItemTypeBack outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
 	[item setBackButtonTitlePositionAdjustment:UIOffsetMake(-1.0, 0.0) forBarMetrics:UIBarMetricsDefault];
 
 	// Landscape Normal Buttons
 	[item setBackgroundImage:[self stretchableButtonImageForTintColor:tintColor barMetrics:UIBarMetricsLandscapePhone forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateNormal barMetrics:UIBarMetricsLandscapePhone];
-	[item setBackgroundImage:[self stretchableButtonImageForTintColor:[self lighterColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsLandscapePhone forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsLandscapePhone];
+	[item setBackgroundImage:[self stretchableButtonImageForTintColor:[self darkerColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsLandscapePhone forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsLandscapePhone];
 
 	// Landscape Back Buttons
 	[item setBackButtonBackgroundImage:[self stretchableButtonImageForTintColor:tintColor barMetrics:UIBarMetricsLandscapePhone forType:BPBarButtonItemTypeBack outline:outline] forState:UIControlStateNormal barMetrics:UIBarMetricsLandscapePhone];
-	[item setBackButtonBackgroundImage:[self stretchableButtonImageForTintColor:[self lighterColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsLandscapePhone forType:BPBarButtonItemTypeBack outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsLandscapePhone];
+	[item setBackButtonBackgroundImage:[self stretchableButtonImageForTintColor:[self darkerColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsLandscapePhone forType:BPBarButtonItemTypeBack outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsLandscapePhone];
 	[item setBackButtonTitlePositionAdjustment:UIOffsetMake(-1.0, 0.0) forBarMetrics:UIBarMetricsLandscapePhone];
 }
 
@@ -88,14 +88,14 @@ typedef enum : NSInteger {
 
 	// Portrait Segmented Controls
 	[segmentedControl setBackgroundImage:[self stretchableButtonImageForTintColor:tintColor barMetrics:UIBarMetricsDefault forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-	[segmentedControl setBackgroundImage:[self stretchableButtonImageForTintColor:[self lighterColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsDefault forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
-	[segmentedControl setBackgroundImage:[self stretchableButtonImageForTintColor:[self lighterColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsDefault forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+	[segmentedControl setBackgroundImage:[self stretchableButtonImageForTintColor:[self darkerColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsDefault forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+	[segmentedControl setBackgroundImage:[self stretchableButtonImageForTintColor:[self darkerColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsDefault forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
 	[segmentedControl setDividerImage:[self segmentedControlDividerImageForTintColor:tintColor barMetrics:UIBarMetricsDefault outline:outline] forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
 
 	// Landscape Segmented Controls
 	[segmentedControl setBackgroundImage:[self stretchableButtonImageForTintColor:tintColor barMetrics:UIBarMetricsLandscapePhone forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateNormal barMetrics:UIBarMetricsLandscapePhone];
-	[segmentedControl setBackgroundImage:[self stretchableButtonImageForTintColor:[self lighterColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsLandscapePhone forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsLandscapePhone];
-	[segmentedControl setBackgroundImage:[self stretchableButtonImageForTintColor:[self lighterColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsLandscapePhone forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateSelected barMetrics:UIBarMetricsLandscapePhone];
+	[segmentedControl setBackgroundImage:[self stretchableButtonImageForTintColor:[self darkerColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsLandscapePhone forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateHighlighted barMetrics:UIBarMetricsLandscapePhone];
+	[segmentedControl setBackgroundImage:[self stretchableButtonImageForTintColor:[self darkerColorFromColor:tintColor modificationAmount:0.1] barMetrics:UIBarMetricsLandscapePhone forType:BPBarButtonItemTypeStandard outline:outline] forState:UIControlStateSelected barMetrics:UIBarMetricsLandscapePhone];
 	[segmentedControl setDividerImage:[self segmentedControlDividerImageForTintColor:tintColor barMetrics:UIBarMetricsLandscapePhone outline:outline] forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsLandscapePhone];
 }
 
